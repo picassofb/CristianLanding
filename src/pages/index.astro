@@ -5,7 +5,7 @@ import LinkIcon from '../components/LinkIcon.astro';
 
 <Layout title="Inicio - Cristian Ramírez">
   <!-- Hero Section -->
-  <section class="bg-black text-white">
+  <section class="bg-black text-white overflow-hidden">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center min-h-[600px] md:min-h-[700px]">
         <!-- Content Column -->
@@ -59,9 +59,9 @@ import LinkIcon from '../components/LinkIcon.astro';
                 alt="Cristian Ramírez"
                 class="w-full h-auto rounded-lg shadow-2xl"
               />
-              <!-- Decorative quotation marks -->
-              <div class="absolute -top-8 -left-8 text-white opacity-10 text-[120px] leading-none font-serif">"</div>
-              <div class="absolute -bottom-8 -right-8 text-white opacity-10 text-[120px] leading-none font-serif rotate-180">"</div>
+              <!-- Decorative quotation marks - hidden on mobile -->
+              <div class="hidden md:block absolute -top-8 -left-8 text-white opacity-10 text-[120px] leading-none font-serif">"</div>
+              <div class="hidden md:block absolute -bottom-8 -right-8 text-white opacity-10 text-[120px] leading-none font-serif rotate-180">"</div>
             </div>
           </div>
         </div>
