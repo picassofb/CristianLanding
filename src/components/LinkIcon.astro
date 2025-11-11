@@ -1,0 +1,25 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<svg
+  viewBox="0 0 100 40"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class={className}
+>
+  <!-- Link chain icon inspired by logo -->
+  <path
+    d="M70 5 H85 C92 5 95 8 95 15 C95 22 92 25 85 25 H55 L50 30 L45 25 H15 C8 25 5 22 5 15 C5 8 8 5 15 5 H30"
+    stroke="currentColor"
+    stroke-width="8"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- Break in the middle -->
+  <line x1="48" y1="5" x2="52" y2="25" stroke="currentColor" stroke-width="3" />
+</svg>

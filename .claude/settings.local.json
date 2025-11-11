@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npm create:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(npx astro add:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

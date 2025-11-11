@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LinkIcon from '../components/LinkIcon.astro';
+---
+
+<Layout title="Inicio - Cristian Ramírez">
+  <!-- Hero Section -->
+  <section class="bg-black text-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center min-h-[600px] md:min-h-[700px]">
+        <!-- Content Column -->
+        <div class="py-12 md:py-20 order-2 md:order-1">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            CRISTIAN RAMÍREZ
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            Transformando equipos a través de capacitaciones que generan resultados medibles y duraderos
+          </p>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-4 mb-8 py-6 border-t border-b border-gray-700">
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1">15+</div>
+              <div class="text-sm text-gray-400">Años de experiencia</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1">500+</div>
+              <div class="text-sm text-gray-400">Profesionales capacitados</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1">50+</div>
+              <div class="text-sm text-gray-400">Empresas transformadas</div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contacto"
+              class="inline-block text-center bg-white text-black px-8 py-3 rounded-md font-semibold hover:bg-gray-200 transition-colors"
+            >
+              Agenda una consulta
+            </a>
+            <a
+              href="/capacitaciones"
+              class="inline-block text-center border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-black transition-colors"
+            >
+              Ver capacitaciones
+            </a>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="order-1 md:order-2 flex items-center justify-center md:justify-end">
+          <div class="relative w-full max-w-md">
+            <div class="relative">
+              <img
+                src="/me.jpg"
+                alt="Cristian Ramírez"
+                class="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <!-- Decorative quotation marks -->
+              <div class="absolute -top-8 -left-8 text-white opacity-10 text-[120px] leading-none font-serif">"</div>
+              <div class="absolute -bottom-8 -right-8 text-white opacity-10 text-[120px] leading-none font-serif rotate-180">"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        ¿Qué puedo hacer por ti?
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Capacitaciones Personalizadas</h3>
+          <p class="text-gray-600">
+            Programas diseñados específicamente para las necesidades de tu equipo y organización.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">💡</div>
+          <h3 class="text-xl font-bold mb-3">Talleres Prácticos</h3>
+          <p class="text-gray-600">
+            Sesiones interactivas con ejercicios reales que generan aprendizaje inmediato.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold mb-3">Consultoría</h3>
+          <p class="text-gray-600">
+            Asesoramiento estratégico para implementar lo aprendido en tu contexto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        ¿Listo para transformar tu equipo?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Conoce las capacitaciones disponibles y encuentra la que mejor se adapta a tus objetivos.
+      </p>
+      <a
+        href="/capacitaciones"
+        class="inline-block bg-black text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors"
+      >
+        Ver capacitaciones
+      </a>
+    </div>
+  </section>
+</Layout>

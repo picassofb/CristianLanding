@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const capacitaciones = [
+  {
+    titulo: 'Liderazgo Estratégico',
+    descripcion: 'Desarrolla habilidades de liderazgo efectivo para guiar equipos hacia el éxito organizacional.',
+    duracion: '8 semanas',
+    modalidad: 'Presencial / Online',
+    nivel: 'Intermedio - Avanzado',
+  },
+  {
+    titulo: 'Gestión de Proyectos Ágiles',
+    descripcion: 'Aprende metodologías ágiles y herramientas para gestionar proyectos de manera eficiente.',
+    duracion: '6 semanas',
+    modalidad: 'Online',
+    nivel: 'Todos los niveles',
+  },
+  {
+    titulo: 'Comunicación Efectiva',
+    descripcion: 'Mejora tus habilidades de comunicación interpersonal y presentaciones profesionales.',
+    duracion: '4 semanas',
+    modalidad: 'Presencial',
+    nivel: 'Todos los niveles',
+  },
+  {
+    titulo: 'Innovación y Creatividad',
+    descripcion: 'Técnicas y herramientas para fomentar la innovación y el pensamiento creativo en tu equipo.',
+    duracion: '5 semanas',
+    modalidad: 'Híbrido',
+    nivel: 'Intermedio',
+  },
+  {
+    titulo: 'Gestión del Cambio',
+    descripcion: 'Estrategias para liderar y gestionar procesos de transformación organizacional exitosos.',
+    duracion: '6 semanas',
+    modalidad: 'Online',
+    nivel: 'Avanzado',
+  },
+  {
+    titulo: 'Trabajo en Equipo',
+    descripcion: 'Construcción y fortalecimiento de equipos de alto rendimiento mediante técnicas comprobadas.',
+    duracion: '4 semanas',
+    modalidad: 'Presencial / Online',
+    nivel: 'Todos los niveles',
+  },
+];
+---
+
+<Layout
+  title="Capacitaciones - Cristian Ramírez"
+  description="Explora nuestras capacitaciones profesionales diseñadas para potenciar tu equipo"
+>
+  <!-- Header -->
+  <section class="bg-black text-white py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Capacitaciones</h1>
+      <p class="text-xl text-gray-300 max-w-2xl">
+        Programas diseñados para desarrollar habilidades clave y transformar equipos
+      </p>
+    </div>
+  </section>
+
+  <!-- Capacitaciones Grid -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          capacitaciones.map((cap) => (
+            <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <h3 class="text-2xl font-bold mb-3">{cap.titulo}</h3>
+              <p class="text-gray-600 mb-4">{cap.descripcion}</p>
+              <div class="space-y-2 text-sm text-gray-500">
+                <div class="flex items-center">
+                  <span class="font-semibold mr-2">Duración:</span>
+                  <span>{cap.duracion}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold mr-2">Modalidad:</span>
+                  <span>{cap.modalidad}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold mr-2">Nivel:</span>
+                  <span>{cap.nivel}</span>
+                </div>
+              </div>
+              <button class="mt-6 w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition-colors">
+                Más información
+              </button>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">¿Necesitas algo personalizado?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Puedo diseñar una capacitación específica para las necesidades de tu organización
+      </p>
+      <a
+        href="/contacto"
+        class="inline-block bg-black text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors"
+      >
+        Contáctame
+      </a>
+    </div>
+  </section>
+</Layout>
