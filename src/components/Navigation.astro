@@ -8,6 +8,21 @@ const navItems = [
   { name: 'Blog', path: '/blog' },
   { name: 'Contacto', path: '/contacto' }
 ];
+
+// Helper function to check if a nav item is active
+const isActive = (itemPath: string, currentPath: string) => {
+  // Normalize paths by removing trailing slash
+  const normalizedCurrent = currentPath.replace(/\/$/, '') || '/';
+  const normalizedItem = itemPath.replace(/\/$/, '') || '/';
+
+  // Exact match for home
+  if (normalizedItem === '/') {
+    return normalizedCurrent === '/';
+  }
+
+  // For other pages, check if current path starts with item path
+  return normalizedCurrent === normalizedItem || normalizedCurrent.startsWith(normalizedItem + '/');
+};
 ---
 
 <nav class="bg-black text-white border-b border-gray-800 sticky top-0 z-50">
@@ -27,7 +42,7 @@ const navItems = [
             <a
               href={item.path}
               class={`text-sm font-medium tracking-wide transition-colors ${
-                currentPath === item.path
+                isActive(item.path, currentPath)
                   ? 'text-white border-b-2 border-white pb-1'
                   : 'text-gray-400 hover:text-white'
               }`}
@@ -58,7 +73,7 @@ const navItems = [
             <a
               href={item.path}
               class={`block text-sm font-medium transition-colors ${
-                currentPath === item.path
+                isActive(item.path, currentPath)
                   ? 'text-white'
                   : 'text-gray-400 hover:text-white'
               }`}
