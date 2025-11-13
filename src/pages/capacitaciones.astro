@@ -3,46 +3,165 @@ import Layout from '../layouts/Layout.astro';
 
 const capacitaciones = [
   {
+    id: 'liderazgo',
     titulo: 'Liderazgo Estratégico',
     descripcion: 'Desarrolla habilidades de liderazgo efectivo para guiar equipos hacia el éxito organizacional.',
     duracion: '8 semanas',
     modalidad: 'Presencial / Online',
     nivel: 'Intermedio - Avanzado',
+    objetivos: [
+      'Desarrollar visión estratégica y capacidad de planificación a largo plazo',
+      'Fortalecer habilidades de toma de decisiones bajo presión',
+      'Aprender a inspirar y motivar equipos de alto rendimiento',
+      'Dominar técnicas de delegación efectiva y empoderamiento'
+    ],
+    contenido: [
+      'Fundamentos del liderazgo estratégico moderno',
+      'Inteligencia emocional y autoconocimiento',
+      'Comunicación asertiva y gestión de conflictos',
+      'Desarrollo y coaching de equipos',
+      'Toma de decisiones estratégicas',
+      'Liderazgo transformacional'
+    ],
+    beneficios: 'Incrementa la productividad del equipo, mejora el clima laboral y desarrolla líderes capaces de enfrentar los desafíos del entorno empresarial actual.'
   },
   {
-    titulo: 'Gestión de Proyectos Ágiles',
-    descripcion: 'Aprende metodologías ágiles y herramientas para gestionar proyectos de manera eficiente.',
-    duracion: '6 semanas',
-    modalidad: 'Online',
+    id: 'oratoria',
+    titulo: 'Oratoria',
+    descripcion: 'Domina el arte de hablar en público con confianza, claridad y poder de persuasión.',
+    duracion: '5 semanas',
+    modalidad: 'Presencial',
     nivel: 'Todos los niveles',
+    objetivos: [
+      'Superar el miedo escénico y desarrollar confianza al hablar en público',
+      'Dominar técnicas de voz, dicción y lenguaje corporal',
+      'Estructurar discursos persuasivos e impactantes',
+      'Conectar emocionalmente con diferentes audiencias'
+    ],
+    contenido: [
+      'Fundamentos de la oratoria moderna',
+      'Manejo del miedo escénico y ansiedad',
+      'Técnicas de respiración y proyección de voz',
+      'Lenguaje corporal y presencia escénica',
+      'Estructura de discursos persuasivos',
+      'Práctica y retroalimentación en vivo'
+    ],
+    beneficios: 'Aumenta tu influencia y capacidad de liderazgo, mejora tu presencia profesional y potencia tu habilidad para inspirar y persuadir audiencias de cualquier tamaño.'
   },
   {
+    id: 'comunicacion',
     titulo: 'Comunicación Efectiva',
     descripcion: 'Mejora tus habilidades de comunicación interpersonal y presentaciones profesionales.',
     duracion: '4 semanas',
     modalidad: 'Presencial',
     nivel: 'Todos los niveles',
+    objetivos: [
+      'Desarrollar habilidades de escucha activa y empatía',
+      'Dominar técnicas de presentación impactantes',
+      'Mejorar la comunicación escrita profesional',
+      'Gestionar conversaciones difíciles con confianza'
+    ],
+    contenido: [
+      'Fundamentos de la comunicación efectiva',
+      'Comunicación verbal y no verbal',
+      'Técnicas de presentación y storytelling',
+      'Comunicación escrita: emails, informes y propuestas',
+      'Manejo de conversaciones difíciles',
+      'Comunicación en equipos virtuales'
+    ],
+    beneficios: 'Fortalece las relaciones laborales, reduce malentendidos, mejora la influencia personal y potencia el impacto de tus mensajes.'
   },
   {
-    titulo: 'Innovación y Creatividad',
-    descripcion: 'Técnicas y herramientas para fomentar la innovación y el pensamiento creativo en tu equipo.',
-    duracion: '5 semanas',
-    modalidad: 'Híbrido',
-    nivel: 'Intermedio',
+    id: 'aleman-basico',
+    titulo: 'Alemán Nivel Básico',
+    descripcion: 'Aprende alemán desde cero con un enfoque práctico y comunicativo para situaciones cotidianas.',
+    duracion: '12 semanas',
+    modalidad: 'Presencial / Online',
+    nivel: 'Principiante (A1)',
+    objetivos: [
+      'Comprender y usar expresiones cotidianas de uso frecuente',
+      'Presentarse e intercambiar información personal básica',
+      'Desenvolverse en situaciones simples de viaje y compras',
+      'Escribir textos cortos y mensajes sencillos en alemán'
+    ],
+    contenido: [
+      'Alfabeto, pronunciación y fonética alemana',
+      'Vocabulario esencial: saludos, números, colores, familia',
+      'Gramática básica: presente, artículos y casos',
+      'Conversaciones cotidianas: restaurantes, tiendas, hotel',
+      'Comprensión auditiva y práctica oral',
+      'Cultura y costumbres de países germanohablantes'
+    ],
+    beneficios: 'Abre puertas a oportunidades laborales internacionales, facilita viajes a países germanohablantes y desarrolla nuevas conexiones profesionales y culturales.'
   },
   {
-    titulo: 'Gestión del Cambio',
-    descripcion: 'Estrategias para liderar y gestionar procesos de transformación organizacional exitosos.',
-    duracion: '6 semanas',
-    modalidad: 'Online',
-    nivel: 'Avanzado',
+    id: 'atencion-cliente',
+    titulo: 'Atención al Cliente',
+    descripcion: 'Desarrolla habilidades excepcionales para brindar experiencias memorables y fidelizar clientes.',
+    duracion: '4 semanas',
+    modalidad: 'Presencial / Online',
+    nivel: 'Todos los niveles',
+    objetivos: [
+      'Desarrollar empatía y orientación genuina al servicio',
+      'Dominar técnicas de comunicación con clientes difíciles',
+      'Resolver problemas y quejas de manera efectiva',
+      'Crear experiencias que generen lealtad y recomendación'
+    ],
+    contenido: [
+      'Fundamentos de excelencia en el servicio',
+      'Psicología del cliente y gestión de expectativas',
+      'Comunicación efectiva y escucha activa',
+      'Manejo de quejas y situaciones difíciles',
+      'Técnicas de recuperación del servicio',
+      'Medición de satisfacción y mejora continua'
+    ],
+    beneficios: 'Incrementa la satisfacción y retención de clientes, mejora la reputación de la marca y convierte a los clientes en promotores activos de tu negocio.'
   },
   {
+    id: 'equipo',
     titulo: 'Trabajo en Equipo',
     descripcion: 'Construcción y fortalecimiento de equipos de alto rendimiento mediante técnicas comprobadas.',
     duracion: '4 semanas',
     modalidad: 'Presencial / Online',
     nivel: 'Todos los niveles',
+    objetivos: [
+      'Comprender las dinámicas de equipos efectivos',
+      'Desarrollar confianza y colaboración',
+      'Gestionar conflictos constructivamente',
+      'Construir equipos de alto rendimiento'
+    ],
+    contenido: [
+      'Fundamentos de trabajo en equipo',
+      'Roles y responsabilidades en equipos',
+      'Comunicación y feedback efectivo',
+      'Resolución de conflictos',
+      'Toma de decisiones en equipo',
+      'Las 5 disfunciones de un equipo (Lencioni)'
+    ],
+    beneficios: 'Mejora la cohesión del equipo, aumenta la productividad colectiva y crea un ambiente de trabajo más positivo y colaborativo.'
+  },
+  {
+    id: 'marketing-digital',
+    titulo: 'Marketing Digital Básico',
+    descripcion: 'Domina las estrategias fundamentales del marketing digital para impulsar tu negocio en el mundo online.',
+    duracion: '6 semanas',
+    modalidad: 'Online',
+    nivel: 'Principiante',
+    objetivos: [
+      'Comprender los fundamentos del marketing digital moderno',
+      'Crear estrategias de contenido para redes sociales',
+      'Implementar campañas publicitarias básicas en plataformas digitales',
+      'Medir y analizar resultados con herramientas de analítica'
+    ],
+    contenido: [
+      'Introducción al ecosistema digital y tendencias',
+      'Estrategia de contenidos y storytelling digital',
+      'Redes sociales: Facebook, Instagram, LinkedIn',
+      'Publicidad digital: Google Ads y Facebook Ads básico',
+      'Email marketing y automatización',
+      'Analítica web y métricas clave (Google Analytics)'
+    ],
+    beneficios: 'Aumenta la visibilidad de tu marca, atrae nuevos clientes de forma rentable y desarrolla presencia digital profesional que genera resultados medibles.'
   },
 ];
 ---
@@ -84,7 +203,10 @@ const capacitaciones = [
                   <span>{cap.nivel}</span>
                 </div>
               </div>
-              <button class="mt-6 w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition-colors">
+              <button
+                class="modal-btn mt-6 w-full bg-[#01b5df] text-white py-2 rounded-md hover:bg-[#0198bf] transition-colors"
+                data-modal={cap.id}
+              >
                 Más información
               </button>
             </div>
@@ -93,6 +215,95 @@ const capacitaciones = [
       </div>
     </div>
   </section>
+
+  <!-- Modales -->
+  {
+    capacitaciones.map((cap) => (
+      <div
+        id={`modal-${cap.id}`}
+        class="modal fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4"
+      >
+        <div class="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+          <div class="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-start">
+            <h2 class="text-3xl font-bold pr-8">{cap.titulo}</h2>
+            <button
+              class="modal-close text-gray-400 hover:text-gray-600 text-3xl leading-none"
+              data-modal={cap.id}
+            >
+              &times;
+            </button>
+          </div>
+
+          <div class="p-6 space-y-6">
+            <div>
+              <p class="text-lg text-gray-600">{cap.descripcion}</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 py-4 border-t border-b border-gray-200">
+              <div>
+                <span class="font-semibold text-sm text-gray-500">Duración</span>
+                <p class="text-lg font-medium">{cap.duracion}</p>
+              </div>
+              <div>
+                <span class="font-semibold text-sm text-gray-500">Modalidad</span>
+                <p class="text-lg font-medium">{cap.modalidad}</p>
+              </div>
+              <div>
+                <span class="font-semibold text-sm text-gray-500">Nivel</span>
+                <p class="text-lg font-medium">{cap.nivel}</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold mb-3">Objetivos</h3>
+              <ul class="space-y-2">
+                {cap.objetivos.map((obj) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-[#01b5df] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-gray-700">{obj}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold mb-3">Contenido del programa</h3>
+              <ul class="grid md:grid-cols-2 gap-2">
+                {cap.contenido.map((cont) => (
+                  <li class="flex items-start">
+                    <span class="text-[#01b5df] mr-2">•</span>
+                    <span class="text-gray-700">{cont}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">Beneficios</h3>
+              <p class="text-gray-700">{cap.beneficios}</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-4">
+              <a
+                href="/contacto"
+                class="flex-1 bg-[#01b5df] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#0198bf] transition-colors text-center"
+              >
+                Solicitar información
+              </a>
+              <button
+                class="modal-close flex-1 bg-gray-200 text-gray-800 px-6 py-3 rounded-md font-semibold hover:bg-gray-300 transition-colors"
+                data-modal={cap.id}
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
 
   <!-- CTA Section -->
   <section class="bg-gray-50 py-16">
@@ -110,3 +321,53 @@ const capacitaciones = [
     </div>
   </section>
 </Layout>
+
+<script>
+  // Abrir modales
+  document.querySelectorAll('.modal-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal');
+      const modal = document.getElementById(`modal-${modalId}`);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Cerrar modales
+  document.querySelectorAll('.modal-close').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal');
+      const modal = document.getElementById(`modal-${modalId}`);
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+
+  // Cerrar modal al hacer clic fuera
+  document.querySelectorAll('.modal').forEach((modal) => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+
+  // Cerrar modal con tecla Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal').forEach((modal) => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+      document.body.style.overflow = 'auto';
+    }
+  });
+</script>
